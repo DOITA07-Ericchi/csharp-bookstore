@@ -1,7 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-
-string titolo = "Strawberry Panic: The Complete Novel Collection";
+﻿string titolo = "Strawberry Panic: The Complete Novel Collection";
 string autore = "Sakurako Kimino";
 string isbn = "978-1934876992";
 ushort pagine = 470;
@@ -15,4 +12,32 @@ bool kindle = false;
 bool copFlessibile = true;
 string url = "https://www.amazon.it/Strawberry-Panic-Complete-Novel-Collection/dp/1934876992/";
 
-Console.WriteLine()
+Console.WriteLine("〜 Il libro di oggi 〜\n");
+Console.WriteLine($"Titolo: {titolo}");
+Console.WriteLine($"Autore: {autore}");
+Console.WriteLine($"ISBN: {isbn}");
+Console.WriteLine($"Numero di pagine: {pagine}");
+Console.WriteLine($"Peso: {peso} kg");
+Console.WriteLine($"Dimensioni: {altezza} x {larghezza} x {profondita}");
+Console.WriteLine($"Valutazione media: {valutazione}/5 stelle");
+Console.WriteLine($"Numero di recensioni: {recensioni}");
+if (kindle == true) {
+    Console.WriteLine("Kindle disponibile: Sì");
+} else
+{
+    Console.WriteLine("Kindle disponibile: No");
+}
+if (copFlessibile == true)
+{
+    Console.WriteLine("Copertina flessibile: Sì");
+}
+else
+{
+    Console.WriteLine("Copertina flessibile: No");
+}
+Console.WriteLine($"\n{url}");
+Console.WriteLine("〜 〜 〜 〜 〜 〜 〜 〜 〜 〜 〜 〜 〜 〜\n");
+
+
+Console.Write("Premi Invio per uscire.");
+Console.ReadLine();
